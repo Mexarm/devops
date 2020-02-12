@@ -1,1 +1,3 @@
 *.sh
+.dockerignore
+.s2iignore
