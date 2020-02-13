@@ -12,7 +12,7 @@ cp target/spring-api.jar dist/.
 cd dist
 oc start-build spring-binary --from-dir=.
 # crear un deployment de la imagen
-oc new-app --name spring-test --image-stream="{project}/{is}:latest"
+oc new-app --name spring-test --image-stream="{project}/spring-binary:latest"
 
 
 # exponer la ruta
