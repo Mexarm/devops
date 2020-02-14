@@ -1,4 +1,4 @@
-FROM python:3.6 
+FROM satell.sct.gob.mx:5000/sct-redhat_docker-rhscl_python-35-rhel7:3.5-58 
 RUN pip install django django_rest_framework
 COPY . .
 RUN python manage.py migrate
