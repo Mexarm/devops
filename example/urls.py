@@ -20,5 +20,6 @@ from curso.views import AllCategory
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', AllCategory.as_view(), name="home")
+    path('', AllCategory.as_view(), name="home"),
+    path('view2/', view2)
 ]
