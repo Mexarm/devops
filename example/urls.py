@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from curso.views import AllCategory
+from curso.views import AllCategory, view2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
