@@ -25,7 +25,7 @@ SECRET_KEY = 'fz2dl(@ou%&v+i((y$v$s2bhjynz(nz5ai0&xo909!+%#z)ws0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
