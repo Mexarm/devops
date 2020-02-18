@@ -10,37 +10,18 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <spring-version>2.1.4.RELEASE-redhat-00001</spring-version>
+    <jdbc-postgres>9.2-1002.jdbc4</jdbc-postgres>
   </properties>
   <repositories>
     <repository>
       <id>red-hat-ga-repository</id>
       <url>https://maven.repository.redhat.com/ga</url>
     </repository>
-    <repository>
-      <id>red-hat-early-access-repository</id>
-      <url>https://maven.repository.redhat.com/earlyaccess/all</url>
-    </repository>
-    <repository>
-      <id>jboss-early-access-repository</id>
-      <url>https://repository.jboss.org/nexus/content/groups/ea</url>
-    </repository>
-    <repository>
-      <id>mvn</id>
-      <url>http://repo.maven.apache.org/maven2/</url>
-    </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
       <id>red-hat-ga-repository</id>
       <url>https://maven.repository.redhat.com/ga</url>
-    </pluginRepository>
-    <pluginRepository>
-      <id>red-hat-early-access-repository</id>
-      <url>https://maven.repository.redhat.com/earlyaccess/all</url>
-    </pluginRepository>
-    <pluginRepository>
-      <id>jboss-early-access-repository</id>
-      <url>https://repository.jboss.org/nexus/content/groups/ea</url>
     </pluginRepository>
   </pluginRepositories>
   <dependencies>
@@ -60,6 +41,17 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-undertow</artifactId>
       <version>${spring-version}</version>
+    </dependency>
+    <!-- JDBC -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-jdbc</artifactId>
+      <version>${spring-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>${jdbc-postgres}</version>
     </dependency>
     <!-- Test -->
     <dependency>

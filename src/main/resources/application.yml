@@ -11,3 +11,8 @@ management:
     defaults:
       enabled: false
       
+spring:
+  datasource:
+    url: jdbc:postgresql://postgresql.prueba-redhat.svc.cluster.local:5432/test
+    username: redhat
+    password: redhat
